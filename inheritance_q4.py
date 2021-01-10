@@ -7,15 +7,19 @@ class Shape:
 
   def get_color(self):
     # TODO
+    return self.color
 
   def set_color(self, color):
     # TODO
+    self.color = color
 
   def get_filled(self):
     # TODO
+    return self.filled
 
   def set_filled(self, filled):
     # TODO
+    self.filled = filled
 
 class Rectangle(Shape):
 
@@ -26,21 +30,27 @@ class Rectangle(Shape):
 
   def get_height(self):
     # TODO
+    return self.height
 
   def set_length(self, height):
     # TODO
+    self.height = height
 
   def get_width(self):
     # TODO
+    return self.width
 
   def set_width(self, width):
     # TODO
+    self.width = width
 
   def get_area(self):
     # TODO
+    return self.height * self.width
 
   def get_perimeter(self):
     # TODO
+    return 2 * (self.height + self.width)
 
 
 class Circle(Shape):
@@ -50,15 +60,19 @@ class Circle(Shape):
 
   def get_radius(self):
     # TODO
+    return self.radius
 
   def set_radius(self, radius):
     # TODO
+    self.radius = radius
 
   def get_area(self):
     # TODO
+    return math.pi * (self.radius**2)
 
   def get_perimeter(self):
     # TODO
+    return 2 * math.pi * self.radius
 
 r1 = Rectangle(10.5, 2.5)
 

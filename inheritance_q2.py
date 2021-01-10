@@ -4,10 +4,13 @@ class Polygon:
     self.sides = [0 for i in range(no_of_sides)]
 
   def inputSides(self):
-    # TODO
+    for i in range(len(self.sides)):
+      self.sides[i] = float(input("Enter side " + str(i+1) + ": " ))
+    return self.sides
 
   def dispSides(self):
-    # TODO
+    for i in range(len(self.sides)):
+      print("Side " + str(i+1) + " is " + str(self.sides[i]))
 
 class Triangle(Polygon):
   def __init__(self):
@@ -15,6 +18,7 @@ class Triangle(Polygon):
 
   def findArea(self):
     # TODO
+    print(f"The area of the triangle is {self.sides[0]*self.sides[1]/2}.")
 
 
 t = Triangle()
